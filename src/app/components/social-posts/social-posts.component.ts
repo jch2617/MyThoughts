@@ -32,6 +32,11 @@ export class SocialPostsComponent implements OnInit {
     this.posts.splice(i,1)
   }
 
+  onSubmit(post) {
+    console.log('post');
+    this.posts.unshift(post);
+  }
+
   // form: boolean = false;
 
   // clickEvent() {

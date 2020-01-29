@@ -2,49 +2,10 @@
   <div>
     <h1>{{ title }}</h1>
   </div>
-  <div (click)="clickEvent()">
-    <button type="button" class="btn-primary" (click) = "show()">Add Thought</button>
-  </div>
   <div class="listC">
     <app-social-posts></app-social-posts>
   </div>
 </div>
 <div>
-<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title" id="myModalLabel">Register</h4>
-    </div>
-    <div class="modal-body">
-        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-              <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                          <label>Title</label>
-                          <input type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
-                          <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
-                                <div *ngIf="f.firstname.errors.required">Title is required</div>
-                          </div>
-                        </div>
-                  </div> 
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                        <label>Thought</label>
-                        <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                          <div *ngIf="f.email.errors.required">Thought is required</div>
-                        </div>
-                    </div>
-                  </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Add Post</button>
-        </form>
-</div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-dismiss="modal" (click) = "hide()">Close</button>
-    </div>
-  </div>
-</div>
-</div>
+
 <router-outlet></router-outlet>

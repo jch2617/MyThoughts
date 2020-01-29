@@ -1,4 +1,5 @@
-<!-- Add onSubmit in this div to open new window -->
+<app-post-form (submitted)="onSubmit($event)"></app-post-form>
+
 <div>
     <app-post *ngFor="let post of posts; let i = index" (deleted)=removePost(i) [posts]="post">
     </app-post>
