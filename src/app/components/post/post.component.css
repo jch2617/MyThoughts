@@ -1,0 +1,15 @@
+.post-container {
+    display: flex;
+    border-bottom: #F3F1F7 1px solid;
+}
+
+.together {
+    top: 0;
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

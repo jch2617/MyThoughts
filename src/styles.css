@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    background-color: #F3F1F7;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(3, 169, 244);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin-top: 5px;
+}
+
+html, body { 
+    height: 100%; 
+    background-color: #F3F1F7;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.delete{
+    font-size: 17px;
+    border: none;
+}
+
+label {
+    padding-top: 50px;
+}
+
+#imagemodal {
+        background: rgba(0, 0, 0, 0.3)
+}
